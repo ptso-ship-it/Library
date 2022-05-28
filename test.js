@@ -1,12 +1,7 @@
-function Book(title,author,pages,read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
-    this.info = () => {
-        return Object.values(this).join(', ')
-    }
-    console.log(this.info())
+function createBook() {
+    var bookData = new FormData()
+    bookData.append("title",document.getElementById("Title").value)
+    bookData.append("author",document.getElementById("Author").value)
+    alert(bookData)
 }
 
-const theHobbit = new Book("The Hobbit","JR Tolkien","295","yes")

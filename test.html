@@ -7,7 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="test.js"></script>
+    <script src="test.js" defer></script>
+    <form onsubmit="return createBook()">
+        <label for="Title">Title:</label>
+        <input type="text" id="Title" value="test"><br>
+        <label for="Author">Author</label>
+        <input type="text" id="Author" value="test"><br>
+        <label for="Pages">Pages:</label>
+        <input type="text" id="Pages">
+        <p>Have you read?</p>
+        <label for="Yes">Yes</label>
+        <input type="radio" id="Yes" name="have_read">
+        <label for="No">No</label>
+        <input type="radio" id="No" name="have_read">
+        <input type="submit" value="Submit">
+    </form>
     
+
 </body>
 </html>
