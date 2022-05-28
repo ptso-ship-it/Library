@@ -7,21 +7,23 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="container">Books:</div>
     <script src="library.js" defer></script>
-    <form onsubmit="return createBook()">
+    <form id="myForm" onsubmit="createBook()">
         <label for="Title">Title:</label>
-        <input type="text" id="Title" value="test"><br>
+        <input type="text" id="Title" value=""><br>
         <label for="Author">Author</label>
-        <input type="text" id="Author" value="test"><br>
+        <input type="text" id="Author"><br>
         <label for="Pages">Pages:</label>
         <input type="text" id="Pages">
         <p>Have you read?</p>
         <label for="Yes">Yes</label>
-        <input type="radio" id="Yes" name="have_read">
+        <input type="radio" id="Yes" name="have_read" value="Yes">
         <label for="No">No</label>
-        <input type="radio" id="No" name="have_read">
+        <input type="radio" id="No" name="have_read" value="No">
         <input type="submit" value="Submit">
     </form>
+    
     
 
 </body>
