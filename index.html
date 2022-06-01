@@ -10,12 +10,22 @@
     <script src="library.js" defer></script>
     <form id="form">
         <div id="wrapper">
-            <span>Title:<input type="text" class="title">Author:<input type="text" class="author"></span>
+            <span>Title:<input type="text" id="title">Author:<input type="text" id="author"></span>
         </div>
-        <input type="button" value="add book" onclick="add_fields()">
+        <!--<input type="button" value="add book" onclick="add_fields()">-->
         <input type="submit" value="submit">    
     </form>
     <div id="container">Books:</div>
+    <table id="bookTable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
     
 
 </body>
